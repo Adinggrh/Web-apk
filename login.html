@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="login-container">
+  <div class="login-left">
+    <img src="assets/logo simpan pinjam.png" class="logo-login">
+    <h1>Sistem Simpan Pinjam</h1>
+    <p>Aplikasi administrasi keuangan</p>
+  </div>
+
+  <div class="login-right">
+    <form class="login-card" id="loginForm">
+      <h2>Login Admin</h2>
+
+      <div class="input-group">
+        <input type="text" id="username" placeholder="Username" required>
+      </div>
+
+      <!-- PASSWORD + ICON EYE -->
+      <div class="input-group password-group">
+        <input type="password" id="password" placeholder="Password" required>
+        <i class="fa fa-eye" id="togglePassword"></i>
+      </div>
+
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

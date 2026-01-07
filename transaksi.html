@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transaksi</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="navbar">
+    <div class="brand">
+      <img src="assets/logo simpan pinjam.png" alt="Logo">
+      <span>Simpan Pinjam</span>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a class="active" href="transaksi.html">Transaksi</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a class="logout" href="login.html">Logout</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= MAIN ================= -->
+<main class="container">
+
+  <!-- FORM TRANSAKSI -->
+  <h2>Form Transaksi</h2>
+
+  <form id="formTransaksi" class="card-form">
+    <div class="input-group">
+      <input type="text" id="nama" placeholder="Nama Transaksi" required>
+    </div>
+
+    <div class="input-group">
+      <input type="number" id="jumlah" placeholder="Jumlah" required>
+    </div>
+
+    <div class="input-group">
+      <select id="kategori" required>
+        <option value="">Pilih Kategori</option>
+        <option>Pemasukan</option>
+        <option>Pengeluaran</option>
+      </select>
+    </div>
+
+    <button type="submit">Simpan Transaksi</button>
+  </form>
+
+  <!-- TABEL TRANSAKSI -->
+  <h2 style="margin-top:2rem">Daftar Transaksi</h2>
+
+  <table id="tabelTransaksi">
+    <thead>
+      <tr>
+        <th>Nama Transaksi</th>
+        <th>Jumlah</th>
+        <th>Kategori</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- DATA MUNCUL DI SINI -->
+    </tbody>
+  </table>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
